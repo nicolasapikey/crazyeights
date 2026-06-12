@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crazy Eights</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-container">
+    <h1>Crazy Eights</h1>
+
+    <section class="status-panel">
+      <p id="message">Click “New Game” to begin.</p>
+      <p><strong>Current Suit:</strong> <span id="currentSuit">-</span></p>
+      <p><strong>Computer Cards:</strong> <span id="computerCount">0</span></p>
+    </section>
+
+    <section class="table">
+      <div>
+        <h2>Draw Pile</h2>
+        <button id="drawCard" class="deck-card">Draw</button>
+      </div>
+
+      <div>
+        <h2>Discard Pile</h2>
+        <div id="discardCard" class="card discard">?</div>
+      </div>
+    </section>
+
+    <section id="suitChooser" class="suit-chooser hidden">
+      <h2>Choose a suit for your 8</h2>
+      <button data-suit="Hearts">♥ Hearts</button>
+      <button data-suit="Diamonds">♦ Diamonds</button>
+      <button data-suit="Clubs">♣ Clubs</button>
+      <button data-suit="Spades">♠ Spades</button>
+    </section>
+
+    <section>
+      <h2>Your Hand</h2>
+      <div id="playerHand" class="hand"></div>
+    </section>
+
+    <button id="newGame" class="new-game">New Game</button>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
